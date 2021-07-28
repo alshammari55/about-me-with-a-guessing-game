@@ -80,3 +80,37 @@ alert('its up to you') ;
 alert('you have to answer') ;
 
   }
+
+  
+  let guess = prompt('Guess a number between 1 and 10');
+  let numGuess = Number(guess);
+  let answer = 7;
+  correct = 0
+  for (var i = 0; i < 3; i++) {
+    if (answer === numGuess){
+      alert('That is correct!');
+      correct++;
+     i=3 
+    }else if (numGuess < answer){
+      numGuess = parseInt(prompt('Too Low, guess again'));
+    }else
+      numGuess = parseInt(prompt('That is too high, guess again!'));
+  }
+  alert('The correct answer was 7!');
+  
+
+
+let favcar = ['bmw', 'nissan', 'mercedes', 'volkswagen', 'kia'];
+
+  for(let x = 0; x < 6; x++ ){
+    let bigGuess = prompt('Can you guess one of my favorite cars?');
+    if (favcar.includes(bigGuess)){
+      alert('You are correct!');
+      correct++;
+      break;
+    }else {
+      alert('Sorry, please try again');
+    }
+  }
+
+  alert('You got' + correct + '/2');
