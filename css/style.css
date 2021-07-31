@@ -2,9 +2,35 @@ body {
     background-color: powderblue;
   }
   h1 {
-    color: blue;
+    color: rgb(19, 19, 20);
   }
   p {
-    color: red;
+    color: rgb(58, 2, 23);
   }
   
+  nav {
+    float: right;
+  }
+  a:link {
+    display: -webkit-inline-box;
+    text-align: center;
+  }
+
+  article {
+   height: 250px;
+   width: 500px;
+   background-color:rgb(204, 153, 170);
+   margin: 50px;
+   padding: 30px;
+   border: greenyellow;
+ }
+
+.aboutme {
+  position: relative;
+}
+.education {
+  position: relative;
+}
+.favcity {
+  position: relative;
+}
